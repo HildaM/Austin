@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+# Spring 配置
+spring:
+  application:
+    name: austin-web
+  profiles:
+    active: dev
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    nacos:
+      server-addr: 192.168.217.128:8848  # 注册中心地址
+      discovery:
+        namespace: 0d3921e3-deb3-4867-b2cb-63299010d1f1
+        group: AUSTIN
+        ephemeral: true
+      config:
+        server-addr: 192.168.217.128:8848  # 配置中心地址
+        file-extension: yaml        # 默认支持配置是properties，需要手动将其改为yaml
+        namespace: 0d3921e3-deb3-4867-b2cb-63299010d1f1
+        group: AUSTIN

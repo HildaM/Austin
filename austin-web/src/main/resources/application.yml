@@ -1,0 +1,25 @@
+mybatis-plus:
+  mapper-locations: classpath:com/xxx/**/mapper/*.xml
+
+
+logging:
+  level:
+    com.quan.austin.feign: debug
+
+feign:
+  client:
+    config:
+      default:        # 当前所有服务生效
+        connectTimeout: 5000  # 连接超时时间
+        readTimeout: 5000     # 读取超时时间
+      service-store:  # 指定特定服务的配置
+        connectTimeout: 2000  # 连接超时时间
+        readTimeout: 2000     # 读取超时时间
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+    connectTimeout: 2000  # 连接超时时间
+    readTimeout: 2000     # 读取超时时间
+
+
