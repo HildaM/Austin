@@ -2,7 +2,10 @@ package com.quan.austinhandler.pending;
 
 import cn.hutool.core.collection.CollUtil;
 import com.quan.austincommon.domain.TaskInfo;
+import com.quan.austinhandler.deduplication.DeduplicationRuleService;
+import com.quan.austinhandler.discard.DiscardMessageService;
 import com.quan.austinhandler.handler.HandlerHolder;
+import com.quan.austinhandler.shield.ShieldService;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import lombok.extern.slf4j.Slf4j;

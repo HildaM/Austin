@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9003
 
 # Spring 配置
 spring:
@@ -8,19 +8,17 @@ spring:
   profiles:
     active: dev
   cloud:
-    inetutils:
-      preferred-networks: 192.168.0  #服务注册时优先使用这个网段
     loadbalancer:
       ribbon:
         enabled: false
     nacos:
-      server-addr: localhost:8848   # 注册中心地址
+      server-addr: 192.168.217.128:8848   # 注册中心地址
       discovery:
         namespace: 0d3921e3-deb3-4867-b2cb-63299010d1f1
         group: AUSTIN
         ephemeral: true
       config:
-        server-addr: localhost:8848 # 配置中心地址
+        server-addr: 192.168.217.128:8848 # 配置中心地址
         file-extension: yaml        # 默认支持配置是properties，需要手动将其改为yaml
         namespace: 0d3921e3-deb3-4867-b2cb-63299010d1f1
         group: AUSTIN

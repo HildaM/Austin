@@ -7,7 +7,6 @@ import com.quan.austinserviceapi.service.SendService;
 import com.quan.austinserviceapiimpl.domain.SendTaskModel;
 import com.quan.austinsupport.pipeline.ProcessContext;
 import com.quan.austinsupport.pipeline.ProcessController;
-import com.quan.austinsupport.pipeline.ProcessModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

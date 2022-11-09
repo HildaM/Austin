@@ -1,42 +1,152 @@
-2022-10-30 15:35:20.228 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-austin-web-dev.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web,AUSTIN'}]
-2022-10-30 15:35:20.270 [main] INFO  com.quan.austin.AustinWebApplication - The following profiles are active: dev
-2022-10-30 15:35:21.087 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c108c737-9b4d-3ce6-a61d-bf9b2c926fbe
-2022-10-30 15:35:21.361 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
-2022-10-30 15:35:21.376 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
-2022-10-30 15:35:21.377 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-10-30 15:35:21.377 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-2022-10-30 15:35:21.513 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-10-30 15:35:21.513 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1223 ms
-2022-10-30 15:35:21.743 [main] INFO  o.s.cloud.openfeign.FeignClientFactoryBean - For 'austin-service' URL not provided. Will try picking an instance via load-balancing.
-2022-10-30 15:35:22.241 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2022-10-30 15:35:23.761 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2022-10-30 15:35:25.189 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
-2022-10-30 15:35:25.311 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
-2022-10-30 15:35:25.311 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
-2022-10-30 15:35:25.312 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
-2022-10-30 15:35:34.393 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
-2022-10-30 15:35:34.411 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
-2022-10-30 15:35:34.414 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=9001, ip='192.168.36.1', weight=1.0, serviceName='AUSTIN@@austin-web', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
-2022-10-30 15:35:34.416 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 0d3921e3-deb3-4867-b2cb-63299010d1f1 registering service AUSTIN@@austin-web with instance: Instance{instanceId='null', ip='192.168.36.1', port=9001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
-2022-10-30 15:35:43.455 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-2022-10-30 15:35:46.481 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-2022-10-30 15:35:46.481 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-2022-10-30 15:35:49.511 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-2022-10-30 15:35:52.529 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-2022-10-30 15:35:52.530 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-2022-10-30 15:35:52.530 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-2022-10-30 15:35:52.531 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-2022-10-30 15:35:52.531 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-2022-10-30 15:35:52.532 [main] INFO  c.alibaba.nacos.client.identify.CredentialWatcher - [null] CredentialWatcher is stopped
-2022-10-30 15:35:52.532 [main] INFO  c.alibaba.nacos.client.identify.CredentialService - [null] CredentialService is freed
-2022-10-30 15:35:52.532 [main] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
-2022-10-30 15:35:52.532 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
-2022-10-30 15:35:52.532 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
-2022-10-30 15:35:52.533 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
-2022-10-30 15:35:52.755 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9001"]
-2022-10-30 15:35:52.756 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2022-10-30 15:35:52.773 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9001"]
-2022-10-30 15:35:52.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9001"]
-2022-10-30 15:35:52.781 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-09 16:49:51.552 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-austin-web-dev.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web,AUSTIN'}]
+2022-11-09 16:49:51.582 [main] INFO  com.quan.austin.AustinWebApplication - The following profiles are active: dev
+2022-11-09 16:49:52.344 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c108c737-9b4d-3ce6-a61d-bf9b2c926fbe
+2022-11-09 16:49:52.605 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2022-11-09 16:49:52.614 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2022-11-09 16:49:52.615 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-09 16:49:52.615 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-11-09 16:49:52.747 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-09 16:49:52.747 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1149 ms
+2022-11-09 16:49:52.895 [main] INFO  o.s.cloud.openfeign.FeignClientFactoryBean - For 'austin-service' URL not provided. Will try picking an instance via load-balancing.
+2022-11-09 16:49:53.317 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-11-09 16:49:54.818 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 16:49:56.202 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 16:49:56.320 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-11-09 16:49:56.320 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2022-11-09 16:49:56.321 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-11-09 16:49:56.451 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2022-11-09 16:49:56.469 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-09 16:49:56.474 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=9001, ip='192.168.36.1', weight=1.0, serviceName='AUSTIN@@austin-web', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-11-09 16:49:56.475 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 0d3921e3-deb3-4867-b2cb-63299010d1f1 registering service AUSTIN@@austin-web with instance: Instance{instanceId='null', ip='192.168.36.1', port=9001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-11-09 16:49:56.497 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, AUSTIN austin-web 192.168.36.1:9001 register finished
+2022-11-09 16:49:57.006 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"name\":\"AUSTIN@@austin-web\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web\",\"ip\":\"192.168.36.1\",\"port\":9001,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"AUSTIN@@austin-web\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000}],\"lastRefTime\":1667983796903,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":2147874598405} from /192.168.42.51
+2022-11-09 16:49:57.019 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - new ips(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-11-09 16:49:57.025 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-11-09 16:49:57.862 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 16:49:57.863 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2022-11-09 16:49:57.866 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-11-09 16:49:57.887 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-11-09 16:49:57.910 [main] INFO  com.quan.austin.AustinWebApplication - Started AustinWebApplication in 9.962 seconds (JVM running for 11.053)
+2022-11-09 16:49:57.913 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 16:49:57.914 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web, group=AUSTIN, cnt=1
+2022-11-09 16:49:57.914 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web, group=AUSTIN
+2022-11-09 16:49:57.914 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web.yaml+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 16:49:57.914 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web.yaml, group=AUSTIN, cnt=1
+2022-11-09 16:49:57.914 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web.yaml, group=AUSTIN
+2022-11-09 16:49:57.915 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web-dev.yaml+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 16:49:57.915 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web-dev.yaml, group=AUSTIN, cnt=1
+2022-11-09 16:49:57.915 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web-dev.yaml, group=AUSTIN
+2022-11-09 16:52:02.846 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-11-09 16:52:02.847 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: AUSTIN@@austin-web:192.168.36.1:9001 from beat map.
+2022-11-09 16:52:02.847 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 0d3921e3-deb3-4867-b2cb-63299010d1f1 deregistering service AUSTIN@@austin-web with instance: Instance{instanceId='null', ip='192.168.36.1', port=9001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-11-09 16:52:02.851 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-11-09 16:52:02.851 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-11-09 16:52:03.397 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"name\":\"AUSTIN@@austin-web\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1667983923323,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":2274294413906} from /192.168.42.51
+2022-11-09 16:52:03.399 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-11-09 16:52:03.400 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: AUSTIN@@austin-web@@DEFAULT -> []
+2022-11-09 16:52:05.881 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-11-09 16:52:05.883 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-11-09 16:52:07.606 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-11-09 16:52:10.630 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2022-11-09 16:52:10.631 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2022-11-09 16:52:10.631 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2022-11-09 16:52:10.631 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2022-11-09 16:52:10.631 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2022-11-09 16:52:10.632 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.client.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2022-11-09 16:52:10.632 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.client.identify.CredentialService - [null] CredentialService is freed
+2022-11-09 16:52:10.632 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2022-11-09 17:03:28.323 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-austin-web-dev.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web,AUSTIN'}]
+2022-11-09 17:03:28.340 [main] INFO  com.quan.austin.AustinWebApplication - The following profiles are active: dev
+2022-11-09 17:03:29.057 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c108c737-9b4d-3ce6-a61d-bf9b2c926fbe
+2022-11-09 17:03:29.300 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2022-11-09 17:03:29.308 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2022-11-09 17:03:29.308 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-09 17:03:29.309 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-11-09 17:03:29.444 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-09 17:03:29.444 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1090 ms
+2022-11-09 17:03:29.601 [main] INFO  o.s.cloud.openfeign.FeignClientFactoryBean - For 'austin-service' URL not provided. Will try picking an instance via load-balancing.
+2022-11-09 17:03:29.952 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-11-09 17:03:31.447 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 17:03:32.860 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 17:03:32.955 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-11-09 17:03:32.955 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2022-11-09 17:03:32.956 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-11-09 17:03:33.038 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2022-11-09 17:03:33.053 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-09 17:03:33.057 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=9001, ip='192.168.36.1', weight=1.0, serviceName='AUSTIN@@austin-web', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-11-09 17:03:33.058 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 0d3921e3-deb3-4867-b2cb-63299010d1f1 registering service AUSTIN@@austin-web with instance: Instance{instanceId='null', ip='192.168.36.1', port=9001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-11-09 17:03:33.063 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, AUSTIN austin-web 192.168.36.1:9001 register finished
+2022-11-09 17:03:33.567 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"name\":\"AUSTIN@@austin-web\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web\",\"ip\":\"192.168.36.1\",\"port\":9001,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"AUSTIN@@austin-web\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000}],\"lastRefTime\":1667984613498,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":2964468664689} from /192.168.42.51
+2022-11-09 17:03:33.578 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - new ips(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-11-09 17:03:33.581 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-11-09 17:03:34.428 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 17:03:34.428 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2022-11-09 17:03:34.432 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-11-09 17:03:34.454 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-11-09 17:03:34.465 [main] INFO  com.quan.austin.AustinWebApplication - Started AustinWebApplication in 9.759 seconds (JVM running for 10.863)
+2022-11-09 17:03:34.469 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 17:03:34.469 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web, group=AUSTIN, cnt=1
+2022-11-09 17:03:34.469 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web, group=AUSTIN
+2022-11-09 17:03:34.470 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web.yaml+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 17:03:34.470 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web.yaml, group=AUSTIN, cnt=1
+2022-11-09 17:03:34.470 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web.yaml, group=AUSTIN
+2022-11-09 17:03:34.471 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web-dev.yaml+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 17:03:34.472 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web-dev.yaml, group=AUSTIN, cnt=1
+2022-11-09 17:03:34.472 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web-dev.yaml, group=AUSTIN
+2022-11-09 17:09:51.266 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-11-09 17:09:51.267 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: AUSTIN@@austin-web:192.168.36.1:9001 from beat map.
+2022-11-09 17:09:51.267 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 0d3921e3-deb3-4867-b2cb-63299010d1f1 deregistering service AUSTIN@@austin-web with instance: Instance{instanceId='null', ip='192.168.36.1', port=9001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-11-09 17:09:51.271 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-11-09 17:09:51.271 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-11-09 17:09:51.865 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"name\":\"AUSTIN@@austin-web\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1667984991794,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":3342764607735} from /192.168.42.51
+2022-11-09 17:09:51.866 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - removed ips(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-11-09 17:09:51.867 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(0) service: AUSTIN@@austin-web@@DEFAULT -> []
+2022-11-09 17:09:53.866 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-11-09 17:09:53.867 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-11-09 17:09:54.525 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-11-09 17:09:57.555 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2022-11-09 17:09:57.555 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2022-11-09 17:09:57.555 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2022-11-09 17:09:57.556 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2022-11-09 17:09:57.556 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2022-11-09 17:09:57.556 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.client.identify.CredentialWatcher - [null] CredentialWatcher is stopped
+2022-11-09 17:09:57.556 [SpringApplicationShutdownHook] INFO  c.alibaba.nacos.client.identify.CredentialService - [null] CredentialService is freed
+2022-11-09 17:09:57.556 [SpringApplicationShutdownHook] INFO  com.alibaba.nacos.client.naming - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2022-11-09 20:42:11.374 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-austin-web-dev.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web.yaml,AUSTIN'}, BootstrapPropertySource {name='bootstrapProperties-austin-web,AUSTIN'}]
+2022-11-09 20:42:11.392 [main] INFO  com.quan.austin.AustinWebApplication - The following profiles are active: dev
+2022-11-09 20:42:12.138 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c108c737-9b4d-3ce6-a61d-bf9b2c926fbe
+2022-11-09 20:42:12.404 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2022-11-09 20:42:12.413 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2022-11-09 20:42:12.414 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-09 20:42:12.414 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-11-09 20:42:12.543 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-09 20:42:12.544 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1136 ms
+2022-11-09 20:42:12.702 [main] INFO  o.s.cloud.openfeign.FeignClientFactoryBean - For 'austin-service' URL not provided. Will try picking an instance via load-balancing.
+2022-11-09 20:42:13.059 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2022-11-09 20:42:14.603 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 20:42:16.003 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 20:42:16.098 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-11-09 20:42:16.098 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2022-11-09 20:42:16.099 [main] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2022-11-09 20:42:16.183 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2022-11-09 20:42:16.200 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-09 20:42:16.205 [main] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: BeatInfo{port=9001, ip='192.168.36.1', weight=1.0, serviceName='AUSTIN@@austin-web', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-11-09 20:42:16.206 [main] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 0d3921e3-deb3-4867-b2cb-63299010d1f1 registering service AUSTIN@@austin-web with instance: Instance{instanceId='null', ip='192.168.36.1', port=9001, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-11-09 20:42:16.211 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, AUSTIN austin-web 192.168.36.1:9001 register finished
+2022-11-09 20:42:16.656 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - received push data: {"type":"dom","data":"{\"name\":\"AUSTIN@@austin-web\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web\",\"ip\":\"192.168.36.1\",\"port\":9001,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"AUSTIN@@austin-web\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"ipDeleteTimeout\":30000,\"instanceHeartBeatTimeOut\":15000}],\"lastRefTime\":1667997736582,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":16087552766375} from /192.168.42.51
+2022-11-09 20:42:16.669 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - new ips(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-11-09 20:42:16.672 [com.alibaba.nacos.naming.push.receiver] INFO  com.alibaba.nacos.client.naming - current ips:(1) service: AUSTIN@@austin-web@@DEFAULT -> [{"instanceId":"192.168.36.1#9001#DEFAULT#AUSTIN@@austin-web","ip":"192.168.36.1","port":9001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"AUSTIN@@austin-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-11-09 20:42:17.575 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2022-11-09 20:42:17.576 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2022-11-09 20:42:17.579 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-11-09 20:42:17.610 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-11-09 20:42:17.620 [main] INFO  com.quan.austin.AustinWebApplication - Started AustinWebApplication in 9.828 seconds (JVM running for 10.828)
+2022-11-09 20:42:17.623 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 20:42:17.624 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web, group=AUSTIN, cnt=1
+2022-11-09 20:42:17.624 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web, group=AUSTIN
+2022-11-09 20:42:17.625 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web.yaml+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 20:42:17.625 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web.yaml, group=AUSTIN, cnt=1
+2022-11-09 20:42:17.625 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web.yaml, group=AUSTIN
+2022-11-09 20:42:17.625 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [subscribe] austin-web-dev.yaml+AUSTIN+0d3921e3-deb3-4867-b2cb-63299010d1f1
+2022-11-09 20:42:17.625 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.217.128_8848-0d3921e3-deb3-4867-b2cb-63299010d1f1] [add-listener] ok, tenant=0d3921e3-deb3-4867-b2cb-63299010d1f1, dataId=austin-web-dev.yaml, group=AUSTIN, cnt=1
+2022-11-09 20:42:17.625 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - listening config: dataId=austin-web-dev.yaml, group=AUSTIN

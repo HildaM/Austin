@@ -1,10 +1,18 @@
+# 配置knife4j
+spring:
+  mvc:
+    pathmatch:
+      # 配置策略
+      matching-strategy: ant-path-matcher
+
+
 mybatis-plus:
   mapper-locations: classpath:com/xxx/**/mapper/*.xml
 
 
 logging:
   level:
-    com.quan.austin.feign: debug
+    com.quan.austin.feign: info
 
 feign:
   client:

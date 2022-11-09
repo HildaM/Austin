@@ -23,7 +23,7 @@ public class PreParamCheckAction implements BusinessProcess<SendTaskModel> {
      * 最大的人数
      * Nacos 配置
      */
-    @Value("${batch_receiver_size:}")
+    @Value("${batch_receiver_size:10}")
     private Integer BATCH_RECEIVER_SIZE;
 
 
