@@ -34,7 +34,10 @@ public class DeduplicationRuleService {
         List<Integer> deduplicationList = DeduplicationType.getDeduplicationList();
         for (Integer deduplicationType : deduplicationList) {
             // 组装去重参数
-
+            DeduplicationParam deduplicationParam = deduplicationHolder.getBuilderByKey(deduplicationType).build(deduplicationConfig, taskInfo);
+            if (deduplicationParam != null) {
+                deduplicationHolder.getServiceByKey(deduplicationType).deduplication(deduplicationParam);
+            }
         }
     }
 
