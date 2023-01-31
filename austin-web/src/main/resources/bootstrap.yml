@@ -22,3 +22,6 @@ spring:
         file-extension: yaml        # 默认支持配置是properties，需要手动将其改为yaml
         namespace: 0d3921e3-deb3-4867-b2cb-63299010d1f1
         group: AUSTIN
+
+
+grayLogIp: 192.168.217.128

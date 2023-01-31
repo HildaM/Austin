@@ -19,14 +19,16 @@ public abstract class BaseHandler implements Handler{
     @Autowired
     private LogUtils logUtils;
 
-//    @Autowired
-//    private FlowControlFactory flowControlFactory;
 
     /**
      * 标识渠道的Code
      * 子类初始化的时候指定
      */
     protected Integer channelCode;
+
+
+//    @Autowired
+//    private FlowControlFactory flowControlFactory;
 
     /**
      * 限流相关的参数
